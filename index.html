@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bonne fête de la république du Niger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/style.css" rel="stylesheet" async="async">
+    <link href="./assets/prism.css" rel="stylesheet" async="async">
+    <script src="./assets/jquery-3.1.1.min.js"></script>
+    <script src="./assets/prism.js"></script>
+    <script src="./assets/fabric_with_gestures.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+           <img class="title" src="assets/title.png">
+           <h1>Bienvenue</h1>
+           <p>Bienvenue sur la platforme de génération de l'image de l'indépendance. Ce site est généré par Nextech Niger et aussi en Open Source sur Github.</p> 
+            <canvas id="preview_panel">
+            </canvas>
+            <div class="file-input-box">
+                <input class="file-input" type="file" name="file" onchange="onFileChange(this)">
+            </div>
+            <button id="download" disabled="">
+                <img alt="Show-Pass jetzt herunterladen" src="./assets/button.png">
+            </button>
+
+
+            <h5 id="no-file"></h5>
+
+            <button id="downloadButton">Télécharger l'image</button>
+
+            <div id="designs" style="display:none;">
+                <img class="design active" src="assets/cover.png" data-design="0">
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./assets/main.js" async="async"></script>
+</html>
