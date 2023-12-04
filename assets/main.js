@@ -175,6 +175,12 @@ window.onload = async function() {
   // Obtient le nouveau nombre de téléchargements et l'affiche
   const newCount = await getDownloadCount();
   console.log(`Nouveau nombre de téléchargements : ${newCount}`);
+
+
+  
+  var countElement = document.getElementById("generated-image-count");
+  countElement.textContent = "Nombre d'images générées : " + newCount;
+
 };
 
 
