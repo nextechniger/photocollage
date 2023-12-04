@@ -38,7 +38,15 @@
         </div>
 
         <p id="generated-image-count">Nombre d'images générées : 0</p>
+
     </div>
 </body>
+
+<script>
+    function cb(response) {
+        document.getElementById('generated-image-count').innerText = response.value;
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/photocollage/visits?callback=cb"></script>
 <script src="./assets/main.js" async="async"></script>
 </html>
