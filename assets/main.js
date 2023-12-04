@@ -15,6 +15,9 @@ var imgRatio = 1;
 var ocw = cw;
 var och = cw / 620 * 874;
 
+var generatedImageCount = 0;
+
+
 
 
 
@@ -61,11 +64,26 @@ window.updatePreview = function(url) {
 
     canvas.add(oImg);
 
+
+        // Incrémente le compteur d'images générées
+        generatedImageCount++;
+    
+        // Met à jour l'affichage du nombre d'images générées
+        updateGeneratedImageCount();
+
     // Ajoutez le texte au canevas
 
     canvas.setActiveObject(oImg);  // Sélectionne l'image d'overlay
     canvas.renderAll();
   });
+
+
+  function updateGeneratedImageCount() {
+    // Met à jour l'affichage du nombre d'images générées
+    var countElement = document.getElementById("generated-image-count");
+    countElement.textContent = "Nombre d'images générées : " + generatedImageCount;
+  }
+  
 
 
   // When click download button, download canvas image
