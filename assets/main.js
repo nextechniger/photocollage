@@ -150,9 +150,33 @@ window.freshCanvas = function(){
   });
 }
 
-window.onload = function() {
-  updateGeneratedImageCount();
+// Fonction pour obtenir le nombre de téléchargements depuis l'API
+async function getDownloadCount() {
+  const response = await fetch('http://localhost:3000/api/downloadCount');
+  const data = await response.json();
+  return data.count;
+}
+
+// Fonction pour incrémenter le nombre de téléchargements via l'API
+async function incrementDownloadCount() {
+  await fetch('http://localhost:3000/api/incrementDownload', { method: 'POST' });
+}
+
+// Exemple d'utilisation dans ton code
+window.onload = async function() {
+  // Obtient le nombre de téléchargements et l'affiche
+  const count = await getDownloadCount();
+  console.log(`Nombre de téléchargements : ${count}`);
+
+  // Simule un téléchargement réussi et incrémente le compteur
+  await incrementDownloadCount();
+  console.log('Téléchargement réussi. Compteur incrémenté.');
+
+  // Obtient le nouveau nombre de téléchargements et l'affiche
+  const newCount = await getDownloadCount();
+  console.log(`Nouveau nombre de téléchargements : ${newCount}`);
 };
+
 
 
 $(document).ready(function(){
