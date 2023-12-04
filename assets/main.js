@@ -150,6 +150,11 @@ window.freshCanvas = function(){
   });
 }
 
+window.onload = function() {
+  updateGeneratedImageCount();
+};
+
+
 $(document).ready(function(){
   freshCanvas();
 
