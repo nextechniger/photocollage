@@ -1,92 +1,149 @@
-html, body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-family: Ubuntu, arial, sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
   word-wrap: break-word;
   word-break: break-word;
 }
-#wrapper{
-	min-height: 100%;
-	background-color: #cccccc;
-	text-align: center;
+
+#wrapper {
+  min-height: 100%;
+  background-color: #ffffff;
+  text-align: center;
   background-position: 0 0;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#content{
-	display: flex;
+
+#content {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #ffffff00;
+  background: rgba(255, 255, 255, 0);
   color: #000;
 }
-#preview_panel{
-	position: relative;
-	display: inline-block;
-	background: #ffffff00;
-  border: 0px solid #333;
+
+#preview_panel {
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0);
+  border: 0;
   height: 100%;
   width: 99%;
 }
+
 #download {
-    cursor: pointer;
-    border-style: none;
-    background: none;
+  cursor: pointer;
+  border: none;
+  background: rgb(1, 160, 17);
+  border: none;
+  padding: 10px 20px;
+
 }
-#download[disabled]{
-  opacity: 0.7;
+
+#download[disabled] {
+  opacity: 0.3;
   cursor: not-allowed;
+  background: rgb(235, 235, 235);
 }
-.design{
+
+.design {
   height: 100px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
-.design.active{
+
+.design.active {
   border: 1px solid #000;
 }
-@media screen and (max-width: 970px){
-  .design{
-    height: 90px;
+
+@media screen and (max-width: 970px) {
+  .design {
+    height: 100px;
   }
 }
-@media screen and (max-width: 881px){
-  .design{
+
+@media screen and (max-width: 881px) {
+  .design {
     height: 70px;
   }
 }
+
 .title {
   width: 50%;
   margin-top: 6vh;
   margin-bottom: 4vh;
 }
+
+/* Votre style CSS existant reste inchangé */
+
 .file-input-box {
   display: flex;
   flex-direction: row;
 }
-.file-input-box #no-file {
+
+.file-input-box .orange-button {
+  background-color: orange;
   color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 4vh 0 0 -2vw;
-  word-spacing: 1px;
-}
-.file-input {
-  margin-left: 1vw;
-  margin-top: 3vh;
-  margin-bottom: 2vw;
-}
-.file-input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-.file-input::before {
-  content: url(./button-selectfile.png);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2vh 1vw 2vw 0;
 }
 
-.upper-canvas {
--webkit-box-shadow: 1px 0px 38px 12px #464646; 
-box-shadow: 1px 0px 38px 12px #828282;
+.file-input {
+  display: none;
 }
+h1 {
+  background-color: orange;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif; /* Exemple de police moderne, tu peux la changer selon tes préférences */
+  text-align: center;
+  padding: 2vh 0;
+  margin: 0;
+}
+
+#welcome-paragraph {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 80%;
+  text-align: center;
+  color: #333;
+}
+
+#welcome-paragraph a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#welcome-paragraph a:hover {
+  text-decoration: underline;
+}
+
+
+.upper-canvas {
+  -webkit-box-shadow: 1px 0px 38px 12px #464646;
+  box-shadow: 1px 0px 38px 12px #828282;
+}
+
+.orange-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.orange-button:hover {
+  background-color: darkorange;
+}
+
+
+

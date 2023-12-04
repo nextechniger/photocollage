@@ -24,19 +24,6 @@ var och = cw / 620 * 874;
  */
 
 
-function addTextToCanvas() {
-  var text = new fabric.Text('Votre texte ici', {
-    left: 100,
-    top: 40,
-    fontSize: 20,
-    fill: 'black',
-    selectable: false,  // Rend le texte non sélectionnable
-    evented: false      // Rend le texte non interagissable
-  });
-  canvas.add(text);
-}
-
-
 window.download = function() {
   var link = document.createElement('a');
   link.download = filename + '.png';
@@ -78,11 +65,6 @@ window.updatePreview = function(url) {
 
     canvas.setActiveObject(oImg);  // Sélectionne l'image d'overlay
     canvas.renderAll();
-
-    canvas.setOverlayImage(oImg, function() {
-      canvas.renderAll();
-       // Ajout du texte après la mise à jour du canevas
-    });
   });
 
 

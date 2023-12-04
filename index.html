@@ -14,22 +14,22 @@
 <body>
     <div id="wrapper">
         <div id="content">
-           <img class="title" src="assets/title.png">
+
            <h1>Bienvenue</h1>
-           <p>Bienvenue sur la platforme de génération de l'image de l'indépendance. Ce site est généré par Nextech Niger et aussi en Open Source sur Github.</p> 
-            <canvas id="preview_panel">
+           <p id="welcome-paragraph">Bienvenue sur notre plateforme de génération d'images dédiée à la célébration de la République du Niger, marquant 64 ans d'indépendance. Ce projet, initié par Nextech Niger, est une initiative libre et accessible via notre page GitHub. L'objectif principal de cette démarche est de promouvoir la visibilité et la fierté de notre cher pays, le Niger. En mettant à disposition un outil simple et créatif, nous encourageons chacun à exprimer son attachement à cette nation riche en histoire et en diversité. Nous célébrons ainsi ensemble cet anniversaire mémorable et invitons tous les citoyens à contribuer à cette célébration numérique de notre indépendance. Rejoignez-nous dans cette aventure collective et partagez votre amour pour le Niger à travers des créations uniques et significatives.</p>
+
+           <canvas id="preview_panel">
             </canvas>
             <div class="file-input-box">
-                <input class="file-input" type="file" name="file" onchange="onFileChange(this)">
+                <label for="file-input" class="orange-button">Sélectionner une image</label>
+                <input id="file-input" class="file-input" type="file" name="file" onchange="onFileChange(this)">
             </div>
             <button id="download" disabled="">
-                <img alt="Show-Pass jetzt herunterladen" src="./assets/button.png">
+                Télécharger l'image
             </button>
 
 
             <h5 id="no-file"></h5>
-
-            <button id="downloadButton">Télécharger l'image</button>
 
             <div id="designs" style="display:none;">
                 <img class="design active" src="assets/cover.png" data-design="0">
