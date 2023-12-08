@@ -84,8 +84,6 @@ window.updatePreview = function(url) {
     countElement.textContent = "Nombre d'images générées : " + generatedImageCount;
   }
   
-
-
   // When click download button, download canvas image
   document.getElementById("download").onclick = function(){
     fabric.Image.fromURL("./assets/download.png", function(img) {
@@ -123,7 +121,7 @@ window.onFileChange = function(input){
         if(width >= 400 && height >= 400)
           updatePreview(e.target.result);
         else
-          alert("Das Sollte sollte mindestens 400px breit und 400px hoch sein.");
+          alert("Une image à la taille 400px 400px est récquit");
       };
       image.src = e.target.result; 
     }
