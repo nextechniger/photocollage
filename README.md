@@ -28,24 +28,22 @@ Ce générateur d'images a été créé par Nextech Niger pour offrir aux citoye
    git clone https://github.com/nextechniger/photocollage.git.git
 
 2. **Installez les Dépendances :**   
-```bash
+  ```bash
 cd photocollage
- ```bash
 npm install
 
 3. **Installez les Dépendances :**
- ```bash
-bash
- ```bash
-Copy code
- ```bash
-cd generateur-images-niger
- ```bash
-npm install
+  ```bash
+       bash
+       Copy code
+       cd photocollage
+       npm install
 
-3. **Accédez à l'Application :**
+4. **Accédez à l'Application :**
 
-Ouvrez votre navigateur et accédez à http://localhost:3000.
+Ouvrez votre navigateur et accédez à 
+    ```bash
+      http://localhost:3000.
 
 ## Contribuez :
 
@@ -60,3 +58,6 @@ Si vous souhaitez contribuer à ce projet, suivez ces étapes :
 4. Push vos modifications (git push origin feature/nouvelle-fonctionnalite).
 5. Créez une pull request.
 
+
+## Contribuez :
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
