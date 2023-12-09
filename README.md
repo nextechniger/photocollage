@@ -28,8 +28,8 @@ Ce générateur d'images a été créé par Nextech Niger pour offrir aux citoye
    ```bash
    git clone https://github.com/nextechniger/photocollage.git.git
 
-2. **Installez les Dépendances t:**
-  bash
+2. **Installez les Dépendances :**
+  <br>
   <code>Copy code</code><br>
   <code>cd photocollage</code><br>
  <code> npm install</code><br>
