@@ -30,9 +30,9 @@ Ce générateur d'images a été créé par Nextech Niger pour offrir aux citoye
 
 2. **Installez les Dépendances t:**
   bash
-  <code>Copy code</code>
-  <code>cd photocollage</code>
- <code> npm install</code>
+  <code>Copy code</code><br>
+  <code>cd photocollage</code><br>
+ <code> npm install</code><br>
 
 3. **Accédez à l'Application :**
 
