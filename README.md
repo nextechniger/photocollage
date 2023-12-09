@@ -56,6 +56,3 @@ Si vous souhaitez contribuer à ce projet, suivez ces étapes :
 4. Push vos modifications (git push origin feature/nouvelle-fonctionnalite).
 5. Créez une pull request.
 
-## Licence :
-
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
