@@ -32,18 +32,18 @@ Ce générateur d'images a été créé par Nextech Niger pour offrir aux citoye
 cd photocollage
 npm install
 
-3. **Installez les Dépendances :**
+3. **Installez les Dépendances t:**
   ```bash
-       bash
-       Copy code
-       cd photocollage
-       npm install
+bash
+Copy code
+cd photocollage
+npm install
 
 4. **Accédez à l'Application :**
 
 Ouvrez votre navigateur et accédez à 
     ```bash
-      http://localhost:3000.
+http://localhost:3000.
 
 ## Contribuez :
 
