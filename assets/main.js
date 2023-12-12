@@ -17,6 +17,8 @@ var och = cw / 620 * 874;
 
 var generatedImageCount = 0;
 
+const count = await getDownloadCount();
+
 
 /** Convert canvas to png and download it to local
  * format       : image file format (png)
@@ -73,6 +75,8 @@ window.updatePreview = function(url) {
     canvas.setActiveObject(oImg);  // Sélectionne l'image d'overlay
     canvas.renderAll();
   });
+
+
 
 
   function updateGeneratedImageCount() {
