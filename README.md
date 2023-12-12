@@ -53,5 +53,5 @@ Si vous souhaitez contribuer à ce projet, suivez ces étapes :
 
 
 ## License :
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+Ce projet est sous licence Apache License 2.0 - voir le fichier LICENSE pour plus de détails.
 
