@@ -52,6 +52,6 @@ Si vous souhaitez contribuer à ce projet, suivez ces étapes :
 5. Créez une pull request.
 
 
-## Contribuez :
+## License :
 Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 

@@ -18,9 +18,6 @@ var och = cw / 620 * 874;
 var generatedImageCount = 0;
 
 
-
-
-
 /** Convert canvas to png and download it to local
  * format       : image file format (png)
  * imgMultiplier: ratio to original overlay image dimension
