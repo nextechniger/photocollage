@@ -17,8 +17,6 @@ var och = cw / 620 * 874;
 
 var generatedImageCount = 0;
 
-const count = await getDownloadCount();
-
 
 /** Convert canvas to png and download it to local
  * format       : image file format (png)
@@ -164,8 +162,7 @@ async function incrementDownloadCount() {
 // Exemple d'utilisation dans ton code
 window.onload = async function() {
   // Obtient le nombre de téléchargements et l'affiche
-  const count = await getDownloadCount();
-  console.log(`Nombre de téléchargements : ${count}`);
+
 
   // Simule un téléchargement réussi et incrémente le compteur
   await incrementDownloadCount();
