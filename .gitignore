@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Cache directories
+.npm/
+.nyc_output/
+coverage/
+
+# Dependency directories
+/dist/
+/tmp/
+/out-tsc/
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+*.log
+logs
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# TypeScript
+*.tsbuildinfo
+*.tsbuildinfo.*
+
+# Build
+/build/
+out/
