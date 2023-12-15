@@ -120,7 +120,7 @@ window.onFileChange = function(input){
         if(width >= 400 && height >= 400)
           updatePreview(e.target.result);
         else
-          alert("Une image à la taille 400px 400px est récquit");
+          updatePreview(e.target.result);
       };
       image.src = e.target.result; 
     }
