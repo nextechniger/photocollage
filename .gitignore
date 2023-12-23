@@ -42,3 +42,4 @@ logs
 # Build
 /build/
 out/
+*.psd
